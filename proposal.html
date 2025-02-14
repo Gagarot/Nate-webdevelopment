@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/proposal.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="proposal.html" class="quote-btn active">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="proposal-main">
+        <div class="quote-container">
+            <div class="quote-steps">
+                <div class="step active" data-step="1">
+                    <span class="step-number">1</span>
+                    <span class="step-text">Project Type</span>
+                </div>
+                <div class="step" data-step="2">
+                    <span class="step-number">2</span>
+                    <span class="step-text">Requirements</span>
+                </div>
+                <div class="step" data-step="3">
+                    <span class="step-number">3</span>
+                    <span class="step-text">Budget & Timeline</span>
+                </div>
+                <div class="step" data-step="4">
+                    <span class="step-number">4</span>
+                    <span class="step-text">Contact Info</span>
+                </div>
+            </div>
+
+            <form id="quoteForm" class="quote-form">
+                <!-- Step 1: Project Type -->
+                <div class="form-step active" data-step="1">
+                    <h2>What type of project do you need?</h2>
+                    <div class="project-types">
+                        <div class="project-type">
+                            <input type="radio" name="projectType" id="website" value="website">
+                            <label for="website">
+                                <i class="fas fa-globe"></i>
+                                <h3>Website</h3>
+                                <p>Custom website development with modern design</p>
+                            </label>
+                        </div>
+                        <div class="project-type">
+                            <input type="radio" name="projectType" id="ecommerce" value="ecommerce">
+                            <label for="ecommerce">
+                                <i class="fas fa-shopping-cart"></i>
+                                <h3>E-commerce</h3>
+                                <p>Online store with payment integration</p>
+                            </label>
+                        </div>
+                        <div class="project-type">
+                            <input type="radio" name="projectType" id="webapp" value="webapp">
+                            <label for="webapp">
+                                <i class="fas fa-laptop-code"></i>
+                                <h3>Web Application</h3>
+                                <p>Complex web application with custom features</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Requirements -->
+                <div class="form-step" data-step="2">
+                    <h2>Project Requirements</h2>
+                    <div class="requirements-section">
+                        <div class="form-group">
+                            <label>Project Description</label>
+                            <textarea name="description" rows="4" placeholder="Describe your project in detail..."></textarea>
+                        </div>
+                        <div class="features-list">
+                            <h3>Required Features</h3>
+                            <div class="feature-options">
+                                <!-- Features will be dynamically loaded based on project type -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Budget & Timeline -->
+                <div class="form-step" data-step="3">
+                    <h2>Budget & Timeline</h2>
+                    <div class="budget-timeline">
+                        <div class="form-group">
+                            <label>Budget Range</label>
+                            <select name="budget" required>
+                                <option value="">Select Budget Range</option>
+                                <option value="small">$1,000 - $5,000</option>
+                                <option value="medium">$5,000 - $10,000</option>
+                                <option value="large">$10,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Desired Completion Date</label>
+                            <input type="date" name="deadline" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Contact Information -->
+                <div class="form-step" data-step="4">
+                    <h2>Your Contact Information</h2>
+                    <div class="contact-info">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone (optional)</label>
+                            <input type="tel" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Contact Method</label>
+                            <select name="contactMethod">
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                                <option value="video">Video Call</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-navigation">
+                    <button type="button" class="prev-btn" style="display: none;">Previous</button>
+                    <button type="button" class="next-btn">Next</button>
+                    <button type="submit" class="submit-btn" style="display: none;">Get Quote</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/proposal.js"></script>
+</body>
+</html>

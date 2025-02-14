@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="projects">
+            <h1 class="section-title">Featured Projects</h1>
+            <div class="projects-grid">
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/ecommerce-project.jpg" alt="E-commerce Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3>Online Store Platform</h3>
+                        <p>A full-featured e-commerce platform with inventory management, payment processing, and customer accounts.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://store-demo.example.com" class="project-link live">Live Demo</a>
+                            <a href="https://github.com/yourusername/store-project" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="images/fitness-app.jpg" alt="Fitness Tracking App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Fitness Tracker</h3>
+                        <p>Mobile-responsive fitness tracking application with workout plans and progress monitoring.</p>
+                        <div class="tech-stack">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Redux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://fitness-app.example.com" class="project-link live">Live Demo</a>
+                            <a href="https://github.com/yourusername/fitness-app" class="project-link github">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html> 

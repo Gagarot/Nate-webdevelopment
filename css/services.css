@@ -1,0 +1,120 @@
+.services-hero {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 2rem 4rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--card-background));
+}
+
+.services-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--secondary-color), #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card.highlight {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+}
+
+@keyframes highlightService {
+    0%, 100% { border-color: var(--secondary-color); }
+    50% { border-color: transparent; }
+}
+
+.service-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.service-header i {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.service-header h2 {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.service-details ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.service-details li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.service-details li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+.contact-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+}
+
+@media (max-width: 768px) {
+    .services-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+} 

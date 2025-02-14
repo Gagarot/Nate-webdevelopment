@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="about-hero">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="images/profile.jpg" alt="Your Name">
+                    <div class="profile-overlay"></div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon github"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="about-content">
+                <h1 class="animate-text">About Me</h1>
+                <p class="bio animate-text">I'm a passionate web developer with a keen eye for design and a love for creating seamless user experiences. With expertise in modern web technologies, I turn complex problems into elegant solutions.</p>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-skill="HTML/CSS" data-level="90">
+                            <div class="skill-progress"></div>
+                            <span class="skill-label">HTML/CSS</span>
+                        </div>
+                        <div class="skill-bar" data-skill="JavaScript" data-level="85">
+                            <div class="skill-progress"></div>
+                            <span class="skill-label">JavaScript</span>
+                        </div>
+                        <div class="skill-bar" data-skill="React" data-level="30">
+                            <div class="skill-progress"></div>
+                            <span class="skill-label">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-skill="Node.js" data-level="15">
+                            <div class="skill-progress"></div>
+                            <span class="skill-label">Node.js</span>
+                        </div>
+                        <div class="skill-bar" data-skill="Python" data-level="14">
+                            <div class="skill-progress"></div>
+                            <span class="skill-label">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Web Developer</h3>
+                        <p class="timeline-date">2021 - Present</p>
+                        <p>Led development of multiple high-traffic web applications using React and Node.js.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Frontend Developer</h3>
+                        <p class="timeline-date">2019 - 2021</p>
+                        <p>Developed responsive web applications and implemented modern UI/UX designs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html> 

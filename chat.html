@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Support - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="chat.html" class="active">Chat</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="chat-container">
+        <div class="chat-box">
+            <div class="chat-header">
+                <h2>Live Chat Support</h2>
+                <p class="status">Status: <span id="connectionStatus">Connecting...</span></p>
+            </div>
+            <div class="messages" id="messageArea">
+                <!-- Messages will be inserted here -->
+            </div>
+            <form id="chatForm" class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type your message..." required>
+                <button type="submit">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
